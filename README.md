@@ -1,11 +1,11 @@
-About r-rcartocolor
-===================
+About r-rcartocolor-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rcartocolor-feedstock/blob/main/LICENSE.txt)
 
 Home: https://carto.com/carto-colors/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rcartocolor-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides color schemes for maps and other graphics designed by 'CARTO' as described at <https://carto.com/carto-colors/>. It includes four types of palettes: aggregation, diverging, qualitative, and quantitative.
 
