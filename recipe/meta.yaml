@@ -1,4 +1,4 @@
-{% set version = '2.0.0' %}
+{% set version = "2.1.1" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rcartocolor_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rcartocolor/rcartocolor_{{ version }}.tar.gz
-  sha256: af701c2fba2ed5e56b8b7283f129497f0070758892ef1f8e111fda2a9e529222
+  sha256: 00b33368b90596553b79f577861fbf825d1ff1717b64a2fc8154becd72bd1153
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -45,11 +45,9 @@ about:
   dev_url: https://github.com/Nowosad/rcartocolor
   doc_url: https://jakubnowosad.com/rcartocolor/
   license: MIT
-  summary: 'Provides color schemes for maps and other graphics designed by ''CARTO'' as described
-    at <https://carto.com/carto-colors/>. It includes four types of palettes: aggregation,
-    diverging, qualitative, and quantitative.'
+  summary: "Provides color schemes for maps and other graphics designed by 'CARTO' as described at <https://carto.com/carto-colors/>. It includes four types of palettes: aggregation, diverging, qualitative, and quantitative."
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
